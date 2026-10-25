@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/waseem087/devops-repository-auditor",
+  "violations": [
+    {
+      "rule_id": "SEC-001",
+      "category": "security",
+      "severity": "critical",
+      "file": "tests/test_agent.py",
+      "line": 49,
+      "description": "Hardcoded API token in source",
+      "evidence": "<tests/test_agent.py line 49> A hardcoded finding definition that includes an example of a literal API token.",
+      "recommendation": "Remove the hardcoded API token and use environment variables or secret manager."
+    }
+  ]
+}
